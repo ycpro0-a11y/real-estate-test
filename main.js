@@ -92,5 +92,34 @@ function updateTimer() {
 updateTimer();
 setInterval(updateTimer, 1000);
 
+// Modal Logic
+const modal = document.getElementById('privacy-modal');
+const openBtn = document.getElementById('open-privacy');
+const closeBtn = document.getElementById('close-privacy');
+
+if (openBtn && modal && closeBtn) {
+  openBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    modal.showModal();
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modal.close();
+  });
+
+  // Close when clicking outside
+  modal.addEventListener('click', (e) => {
+    const dialogDimensions = modal.getBoundingClientRect();
+    if (
+      e.clientX < dialogDimensions.left ||
+      e.clientX > dialogDimensions.right ||
+      e.clientY < dialogDimensions.top ||
+      e.clientY > dialogDimensions.bottom
+    ) {
+      modal.close();
+    }
+  });
+}
+
 // Log for confirmation
 console.log('Real Estate Exam Info site initialized');
