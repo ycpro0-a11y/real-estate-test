@@ -155,6 +155,14 @@ a {
   background-color: var(--accent-color);
 }
 
+.bg-dark {
+  background-color: var(--primary-color);
+}
+
+.text-white {
+  color: var(--white);
+}
+
 .section-title {
   font-size: 2rem;
   font-weight: 800;
@@ -163,113 +171,82 @@ a {
   position: relative;
 }
 
-.section-title::after {
-  content: '';
-  display: block;
-  width: 50px;
-  height: 4px;
-  background-color: var(--secondary-color);
-  margin: 15px auto 0;
-  border-radius: 2px;
-}
-
-/* Schedule Grid */
-.schedule-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
-
-.schedule-item {
+.bg-dark .section-title::after {
   background-color: var(--white);
-  padding: 30px;
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: var(--shadow);
-  transition: var(--transition);
 }
 
-.schedule-item:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
+/* Trends Section */
+.trends-container {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.badge {
-  display: inline-block;
-  padding: 5px 15px;
-  background-color: #edf2f7;
+.trend-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
-  font-size: 0.875rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.badge.highlight {
-  background-color: var(--secondary-color);
-  color: var(--white);
-}
-
-.date {
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-
-/* Exam Info Grid */
-.exam-info-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 30px;
-  margin-bottom: 40px;
-}
-
-.exam-card {
-  background-color: var(--white);
   padding: 40px;
-  border-radius: 15px;
-  box-shadow: var(--shadow);
-  border-top: 5px solid var(--secondary-color);
+  backdrop-filter: blur(10px);
 }
 
-.exam-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: var(--primary-color);
+.trend-header {
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 20px;
 }
 
-.exam-card ul li {
+.trend-year {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
   margin-bottom: 10px;
-  padding-left: 20px;
-  position: relative;
 }
 
-.exam-card ul li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: var(--secondary-color);
-  font-weight: bold;
+.trend-header h3 {
+  font-size: 1.75rem;
+  font-weight: 800;
 }
 
-.passing-criteria {
-  text-align: center;
-  padding: 20px;
-  background-color: var(--accent-color);
-  border-radius: 10px;
+.subject-trends {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.subject-trend-item h4 {
+  color: var(--accent-color);
+  margin-bottom: 10px;
   font-size: 1.1rem;
 }
 
-/* Papers List */
-.papers-list {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 800px;
-  margin: 0 auto;
+.subject-trend-item p {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.strategy-box {
+  background-color: var(--white);
+  color: var(--text-color);
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  border-left: 5px solid var(--secondary-color);
+}
+
+/* Papers Grid */
+.papers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 .paper-item {
   background-color: var(--white);
-  padding: 20px 30px;
+  padding: 20px;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
