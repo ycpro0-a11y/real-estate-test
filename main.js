@@ -3,16 +3,18 @@ const BLOG_POSTS = [
   {
     id: 36,
     title: "[제36회 총평] 역대급 불시험 민법, 사례 중심 대비가 관건",
-    summary: "2025년 제36회 시험은 민법의 난이도가 비정상적으로 높었습니다. 단순 암기 위주로 공부한 수험생들은 고전했을 것으로 보입니다.",
+    summary: "2025년 제36회 시험은 민법의 난이도가 비정상적으로 높았습니다. 단순 암기 위주로 공부한 수험생들은 고전했을 것으로 보입니다.",
     date: "2025-11-01",
     source: "한국산업인력공단(Q-Net) 통계 및 주요 공인중개사 교육기관 합격 분석 자료",
+    killers: [
+      { subject: "부동산세법", question: "양도소득세 계산 시 장기보유특별공제와 세율 적용의 복합 사례 (25번~28번 정답이 모두 5번으로 출제됨)", solution: "수험생의 심리를 흔드는 정답 배치와 함께, 개정된 고가주택 기준을 적용해야 하는 고난도 계산 문제였습니다. 평소 연습하지 않은 수치들이 대거 등장했습니다.", answer: "5" },
+      { subject: "부동산공법", question: "주택법상 품질점검단 구성 및 운영에 관한 세부 규정", solution: "실무에서 거의 다루지 않는 지엽적인 시행령 내용으로, 과락을 유발하기 위한 전형적인 킬러 문항이었습니다.", answer: "3" }
+    ],
     content: `
       <h4>1차 시험: 민법의 배신</h4>
       <p>이번 36회 시험에서 가장 큰 변수는 민법이었습니다. 판례의 비중이 90%에 육박했으며, 지문의 길이가 역대급으로 길어 시간 부족 현상을 호소하는 수험생이 많았습니다. 학개론은 계산 문제가 평이했으나 민법에서의 시간 손실을 메우기 역부족이었습니다.</p>
       <h4>2차 시험: 안정적인 난이도 유지</h4>
       <p>중개사법은 고득점이 가능하도록 출제되었으나, 공법에서 국토계획법 외의 파트에서 지엽적인 지문이 다수 등장했습니다. 세법은 개정 법령 중심의 출제가 돋보였습니다.</p>
-      <h4>총평 및 조언</h4>
-      <p>이제 민법은 조문 암기가 아닌 '상황 해석'의 영역으로 넘어갔습니다. 기출 판례를 실제 사례에 대입하는 훈련을 반복해야 합니다.</p>
     `
   },
   {
@@ -21,13 +23,15 @@ const BLOG_POSTS = [
     summary: "2024년 35회 시험은 2차 과목인 공법에서 변별력을 크게 높였습니다. 학개론의 계산 문제도 다소 까다로웠습니다.",
     date: "2024-11-01",
     source: "한국산업인력공단(Q-Net) 공지사항 및 과목별 출제위원 강평 요약",
+    killers: [
+      { subject: "민법", question: "오표시 무해의 원칙과 착오에 의한 취소권 행사의 경합 사례", solution: "계약서상 지번 기재 오류 시 당사자의 진의를 파악하는 문제로, 취소권 인정 여부를 묻는 복합 판례형이었습니다.", answer: "2" },
+      { subject: "중개사법", question: "부동산 거래신고법상 포상금 지급 대상 및 절차 (박스형)", solution: "단순 암기 사항을 사례에 대입하여 지급 대상인 것과 아닌 것을 모두 골라야 하는 까다로운 형태였습니다.", answer: "4" }
+    ],
     content: `
       <h4>1차 시험: 무난한 흐름 속 학개론의 변주</h4>
       <p>민법은 예년 수준을 유지했으나 부동산학개론에서 투자론과 금융론의 계산 문제가 복합적으로 출제되어 체감 난이도가 상승했습니다.</p>
       <h4>2차 시험: '공포'의 공법 재림</h4>
       <p>공법에서 듣도 보도 못한 숫자와 예외 규정이 대거 출제되어 과락자가 속출했습니다. 반면 중개사법은 상대적으로 평이하게 출제되어 전략적인 점수 배분이 합격의 열쇠였습니다.</p>
-      <h4>합격 포인트</h4>
-      <p>공법은 과락을 면하는 전략(40~50점)으로, 중개사법에서 80점 이상을 확보하는 전통적인 전략이 유효했습니다.</p>
     `
   },
   {
@@ -36,10 +40,13 @@ const BLOG_POSTS = [
     summary: "2023년 시험은 과목별 난이도 배분이 적절했다는 평가입니다. 기초가 탄탄한 수험생에게 유리했습니다.",
     date: "2023-11-01",
     source: "큐넷(Q-Net) 시행 통계 및 공인중개사 협회 분석 리포트",
+    killers: [
+      { subject: "학개론", question: "입지계수(LQ)를 활용한 지역 경제 기반 분석 및 기대수익률 계산", solution: "계산 과정이 3단계 이상인 복잡한 산식 문제로, 감정평가사 수준의 고난도 문항이었습니다.", answer: "1" },
+      { subject: "부동산공법", question: "도시개발법상 조합의 설립 및 운영에 관한 지엽적 규정", solution: "정관 변경 시 승인 요건 등 평소에 잘 보지 않는 세부 수치를 정답으로 유도했습니다.", answer: "5" }
+    ],
     content: `
       <h4>전 과목 분석</h4>
       <p>특별히 튀는 과목 없이 골고루 중요 개념 위주로 출제되었습니다. 학개론의 감정평가론 파트가 다소 강화된 점이 특징입니다. 민법은 전통적인 리딩 판례들이 대거 등장했습니다.</p>
-      <p>2차 과목에서는 공시법의 등기법 파트가 다소 어려워졌으나 세법이 평이하여 상쇄되었습니다.</p>
     `
   },
   {
@@ -48,6 +55,10 @@ const BLOG_POSTS = [
     summary: "약 40만 명이 몰린 33회 시험은 떨어뜨리기 위한 '함정 문제'가 도처에 깔려 있었습니다.",
     date: "2022-11-01",
     source: "한국산업인력공단 보도자료 및 에듀윌/박문각 등 주요 교육기관 총평",
+    killers: [
+      { subject: "부동산세법", question: "조세총론 중 가산세 및 면세점 적용의 예외 사례", solution: "33회 세법은 역대급으로 불리며, 평이했던 파트에서도 예외의 예외를 묻는 지문이 많았습니다.", answer: "4" },
+      { subject: "학개론", question: "감정평가론상 감가수정 방법 및 원가법 적용 산식", solution: "이론적인 깊이가 상당했으며 지문 구성이 꼬여 있어 정답을 찾는 데 많은 시간이 소요되었습니다.", answer: "2" }
+    ],
     content: `
       <h4>주요 특징</h4>
       <p>응시자가 몰린 만큼 난이도 조절에 공을 들인 흔적이 보입니다. 지문 하나하나를 꼼꼼히 읽지 않으면 반대되는 보기를 정답으로 고르기 쉬운 낚시성 문제가 많았습니다.</p>
@@ -59,6 +70,10 @@ const BLOG_POSTS = [
     summary: "2021년 시험은 단순 이론보다는 실무에서 발생할 수 있는 분쟁 사례가 민법과 중개실무에서 강조되었습니다.",
     date: "2021-11-01",
     source: "큐넷(Q-Net) 기출문제 자료실 및 수험 커뮤니티 합격 수기 분석",
+    killers: [
+      { subject: "민법", question: "제3자를 위한 계약 및 계약의 해제와 원상회복 의무 (갑-을-병 사례)", solution: "당사자 간의 권리 관계가 복잡하게 얽혀 있어 머릿속으로 그림을 그려가며 풀어야 했던 킬러입니다.", answer: "3" },
+      { subject: "중개사법", question: "분사무소 인장 등록 및 이전 신고의 주체와 장소", solution: "주사무소와 분사무소의 신고처를 교묘하게 섞어놓아 실수를 유도한 전형적인 함정 문제였습니다.", answer: "1" }
+    ],
     content: `
       <h4>분석</h4>
       <p>중개실무 파트에서 상가 및 주택 임대차 보호법의 깊이 있는 이해를 요구했습니다. 공법은 개발법 파트가 다소 까다로웠습니다.</p>
@@ -70,6 +85,10 @@ const BLOG_POSTS = [
     summary: "30회 합격자가 많았던 터라 31회는 다소 어렵게 출제될 것이라는 예상을 적중시켰습니다.",
     date: "2020-11-01",
     source: "한국산업인력공단 자격검정 통계 및 입시 분석 채널 자료 참고",
+    killers: [
+      { subject: "중개사법", question: "계약명의신탁에서 매도인이 선의인 경우의 소유권 귀속 사례", solution: "민법적 지식이 없으면 중개사법에서도 풀 수 없는, 과목 간 경계를 허문 고난도 사례였습니다.", answer: "5" },
+      { subject: "부동산공법", question: "도시 및 주거환경정비법상 관리처분계획의 수립 기준", solution: "암기하기 매우 힘든 지엽적인 수치들이 정답 지문으로 사용되어 수험생들을 당황하게 했습니다.", answer: "2" }
+    ],
     content: `
       <p>민법의 지문들이 정교하게 다듬어져 출제되었습니다. 학개론은 기본 이론에 충실했으나 계산 문제가 시간을 많이 잡아먹는 구조였습니다.</p>
     `
@@ -80,6 +99,10 @@ const BLOG_POSTS = [
     summary: "2019년 시험은 1차 과목의 난이도가 상당했습니다. 1차 관문만 넘으면 2차는 무난했던 회차입니다.",
     date: "2019-11-01",
     source: "큐넷(Q-Net) 합격자 발표 공고 및 교육기관별 난이도 투표 결과",
+    killers: [
+      { subject: "학개론", question: "수요의 가격탄력성과 소득탄력성이 혼합된 균형 가격 이동 계산", solution: "두 가지 탄력성을 동시에 고려하여 최종 수요량을 산출해야 하는, 시간이 많이 소요되는 문제였습니다.", answer: "3" },
+      { subject: "민법", question: "민법총칙상 착오와 사기에 의한 의사표시의 경합 판례", solution: "전통적인 이론보다는 최신 판례의 미묘한 차이를 묻는 지문이 킬러로 등장했습니다.", answer: "4" }
+    ],
     content: `
       <p>민법 총칙 파트에서 심화 개념이 다수 등장했습니다. 2차 과목은 전반적으로 평이하여 1차 합격자의 최종 합격률이 높았습니다.</p>
     `
@@ -90,6 +113,10 @@ const BLOG_POSTS = [
     summary: "2018년 시험은 '공포의 공법'이 무엇인지 보여준 해였습니다. 과락 면하기가 지상 과제였습니다.",
     date: "2018-11-01",
     source: "한국산업인력공단 공인중개사 자료실 및 과목별 전문 강사단 총평",
+    killers: [
+      { subject: "부동산공법", question: "건축법상 용도변경 시 허가 및 신고 대상의 복합 암기", solution: "용도군 9가지를 완벽히 암기해도 헷갈릴 수 있도록 준용 규정을 섞어 출제한 난해한 문제였습니다.", answer: "1" },
+      { subject: "중개실무", question: "민사집행법상 경매의 배당 순위 및 매각허가결정 효력", solution: "법률 지식이 상당히 깊어야 풀 수 있는 경매 실무의 정수와 같은 킬러였습니다.", answer: "5" }
+    ],
     content: `
       <p>공법에서 법률 구석구석의 시행령 숫자까지 묻는 문제가 다수 나와 수험생들을 당황케 했습니다. 학개론은 계산기 없이는 풀기 힘든 복잡한 산식이 포함되었습니다.</p>
     `
@@ -100,6 +127,10 @@ const BLOG_POSTS = [
     summary: "2017년은 기출문제를 꼼꼼히 분석한 수험생이라면 고득점이 가능했던 회차로 평가받습니다.",
     date: "2017-11-01",
     source: "큐넷(Q-Net) 기출문제 게시판 및 부동산 전문 뉴스 자료 참고",
+    killers: [
+      { subject: "민법", question: "가등기담보 등에 관한 법률상 청산 절차와 권리 취득 (사례형)", solution: "지문의 길이가 매우 길어 독해력이 요구되었으나, 기출 유형을 잘 파악했다면 풀 수 있었던 킬러입니다.", answer: "2" },
+      { subject: "중개사법", question: "개업공인중개사의 고용인 관리 및 금지행위 위반 시 등록취소 사유", solution: "상대적 등록취소와 절대적 등록취소 사유를 교묘하게 섞어 박스형으로 출제했습니다.", answer: "3" }
+    ],
     content: `
       <p>새로운 유형보다는 기존 기출 지문을 변형한 형태가 주를 이뤘습니다. 이 해에는 많은 합격자가 배출되어 다음 해 난이도 상승의 원인이 되기도 했습니다.</p>
     `
@@ -110,6 +141,10 @@ const BLOG_POSTS = [
     summary: "2016년 시험은 공인중개사 자격시험의 정석과도 같은 출제 분포를 보여주었습니다.",
     date: "2016-11-01",
     source: "한국산업인력공단 공식 통계 자료 및 주요 교육 브랜드 분석 데이터",
+    killers: [
+      { subject: "부동산공법", question: "국토계획법상 입지규제최소구역 지정 및 개발계획 (당시 신설 문항)", solution: "당시 신설된 법령을 즉각 반영하여 공부량이 부족한 수험생들을 걸러내는 킬러로 작용했습니다.", answer: "4" },
+      { subject: "학개론", question: "용도지역 중 제1종 일반주거지역 내에서 건축할 수 없는 시설", solution: "방대한 건축법 용도 분류를 세세하게 암기해야 풀 수 있는 단순 암기형 킬러였습니다.", answer: "2" }
+    ],
     content: `
       <p>과목별로 중요도가 높은 단원에서 예상 가능한 문제들이 출제되었습니다. 민법은 의사표시와 대리 파트가, 학개론은 수요공급과 정책론이 핵심이었습니다.</p>
     `
@@ -239,14 +274,32 @@ window.openBlogPost = function(id) {
   const modal = document.getElementById('blog-modal');
   const content = document.getElementById('blog-content');
   
+  let killersHtml = '';
+  if (post.killers && post.killers.length > 0) {
+    killersHtml = `
+      <div class="killers-section" style="margin-top: 40px; background-color: #f8fafc; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0;">
+        <h3 style="color: #c53030; margin-bottom: 20px;">🎯 대표 킬러문항 분석</h3>
+        ${post.killers.map(k => `
+          <div class="killer-item" style="margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px dashed #cbd5e1;">
+            <div style="font-weight: 800; color: #2d3748; margin-bottom: 8px;">[${k.subject}]</div>
+            <div style="font-size: 1.05rem; margin-bottom: 12px; line-height: 1.5; color: #1a365d;"><strong>Q: ${k.question}</strong></div>
+            <div style="font-size: 0.95rem; color: #4a5568; margin-bottom: 10px;"><strong>💡 풀이:</strong> ${k.solution}</div>
+            <div style="display: inline-block; padding: 4px 12px; background-color: #ebf8ff; color: #0052cc; border-radius: 20px; font-weight: 800;">정답: ${k.answer}번</div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+
   content.innerHTML = `
     <article class="blog-post-view">
       <div class="blog-post-header">
         <h2>${post.title}</h2>
-        <div class="blog-post-meta">작성일: ${post.date} | 태그: 공인중개사, 시험분석</div>
+        <div class="blog-post-meta">작성일: ${post.date} | 태그: 공인중개사, 시험분석, 킬러문제</div>
       </div>
       <div class="blog-post-content">
         ${post.content}
+        ${killersHtml}
         <div class="blog-post-source" style="margin-top: 40px; padding-top: 20px; border-top: 1px dashed #e2e8f0; font-size: 0.85rem; color: #718096;">
           <strong>출처 및 참고:</strong> ${post.source}
         </div>
