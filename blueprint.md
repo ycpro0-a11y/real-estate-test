@@ -23,8 +23,8 @@
 - [x] 헤더 (Navigation): 로고 및 섹션별 이동 링크 (Smooth Scroll).
 - [x] 히어로 섹션 (Hero): 메인 타이틀 및 **D-Day 카운트다운 타이머**.
 - [x] 시험 안내 (Exam Info): 1차/2차 시험 과목 및 합격 기준 카드 레이아웃.
-- [ ] 출제경향 총평 (Exam Trends): 최근 시험의 난이도 및 주요 출제 포인트 분석 섹션 추가.
-- [ ] 기출문제 (Past Papers): 최근 10개년(제27회~제36회) 기출문제 리스트 확장.
+- [x] 출제경향 총평 (Exam Trends): 최근 시험의 난이도 및 주요 출제 포인트 분석 섹션 추가.
+- [x] 기출문제 및 해설 (Past Papers & Solutions): 최근 10개년(제27회~제36회) 기출문제와 **정답/해설** 링크 제공.
 - [x] FAQ & Tips: Web Component를 이용한 아코디언 컴포넌트 (`<faq-accordion>`).
 - [x] 푸터 (Footer): 관련 링크 및 저작권 정보.
 
