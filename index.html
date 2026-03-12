@@ -24,6 +24,7 @@
           <li><a href="#schedule">시험일정</a></li>
           <li><a href="#subjects">시험과목</a></li>
           <li><a href="#trends">출제경향</a></li>
+          <li><a href="#blog">시험분석글</a></li>
           <li><a href="#study-guide">학습가이드</a></li>
           <li><a href="#past-papers">기출문제</a></li>
           <li><a href="#faq">FAQ</a></li>
@@ -136,6 +137,16 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">회차별 상세 분석 블로그</h2>
+        <p class="section-description">제27회부터 최신 제36회까지, 10년간의 과목별 난이도 변화와 합격 포인트 전략을 분석했습니다.</p>
+        <div id="blog-grid" class="blog-grid">
+          <!-- Blog cards will be injected by main.js -->
         </div>
       </div>
     </section>
@@ -284,6 +295,16 @@
         <p>사용자는 언제든지 웹 브라우저 설정을 통해 쿠키를 거부하거나, Google 광고 설정을 통해 개인 맞춤 광고를 선택 해제할 수 있습니다.</p>
         <h3>3. 면책 조항</h3>
         <p>본 사이트에서 제공하는 정보는 참고용이며, 법적 효력을 갖지 않습니다. 운영자는 정보의 정확성을 위해 노력하나, 정보의 오류, 누락 또는 사이트 이용으로 인해 발생하는 어떠한 손해에 대해서도 책임을 지지 않습니다. 시험 관련 최종 확인은 항상 주관 부처(한국산업인력공단)의 공식 공고를 따르시기 바랍니다.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Blog Post Modal -->
+  <dialog id="blog-modal" class="modal blog-modal">
+    <div class="modal-content">
+      <button id="close-blog" class="close-btn">&times;</button>
+      <div id="blog-content" class="modal-body">
+        <!-- Content injected by main.js -->
       </div>
     </div>
   </dialog>
